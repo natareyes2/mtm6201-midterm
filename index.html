@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,7 +15,7 @@
 <body>
 
     <!-- Header -->
-    <header id="header-index">
+    <header id="header-index" role="banner">
         <div class="header-tittle">
           <h1 class="act">Acts.Of.Life</h1><br>
         </div>
@@ -23,12 +24,17 @@
 
     <!-- Main -->
     <main id="main-content" role="main">
-        <div class="image-kids">
-            <!-- Image REMEBER TO CHANGE IT -->
-                <img src="img/Bitmap.png" alt="kids">
+        <div class="image-kids" role="img" aria-label="Kids">
+                <picture>
+                    <source srcset="img/Kids-480_x_480.jpg 480vw,
+                                img/Kids-960_x_960.jpg 960vw,
+                                img/Kids-1440_x_1440.jpg 1440vw"
+                            media="(max-width: 1440px)" sizes="100vw">
+                    <img src="img/Kids-1440_x_1440.jpg" alt="Kids">
+                </picture>
 
             <!-- Button get started -->
-            <button type="submit" value="button" class="btn-get">GET STARTED<a href="login.html">.</a></button><br><br>
+            <button type="submit" value="button" class="btn-get"><span>GET STARTED</span><a href="login.html">.</a></button><br><br>
         </div>
 
             

@@ -1,63 +1,70 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap" rel="stylesheet">
+    <!-- icon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Ghana Residential Fund</title>
 </head>
 <body>
-    <!-- button back -->
-    <button type="button" id="back-button">
-        <a href="welcome.html" style="text-decoration: none;">
-            <i class="material-icons">arrow_back</i></a>
-    </button>
-    <button type="button" id="back-button">
-        <i class="material-icons">more_horiz</i>
-    </button>
-
-    <!-- Header -->
-    <header>
-        <!-- Work -->
-        <section>
-                <picture>
-                    <source srcset="img/work_480_x_306.jpg 480w,
-                                img/work_960_x_612.jpg 960w,
-                                img/work_1440_x_918.jpg 1440w"
-                            media="(max-width: 1440px)" sizes="100vw">
-                    <img src="img/work_1440_x_918.jpg" alt="Work">
-                </picture>
-        </section>
-    </header>
-
-    <!-- Main -->
-    <main>
-        <div>
-            <h6>Under "Basic Amenities"</h6>
-            <h5>Ghana Residential Fund</h5>
-                <div class="total">
-                <h6>TOTAL RAISED </h6>
-                <p><s>$40,000</s></p>
-                <p>$50,000</p>
+    <div class="wrap" role="main">
+        <!-- button back -->
+        <div class="back-menu" role="navigation">
+            <button type="button" id="back-button" class="back">
+                <a href="welcome.html" style="text-decoration: none;">
+                    <i class="material-icons">arrow_back</i></a>
+            </button>
+            <button type="button" id="back-button" class="more">
+                <i class="material-icons">more_horiz</i>
+            </button>
         </div>
 
-        <!-- Megan Hunt -->
-        <div class="megan">
-            <img src="img/woman.jpg" alt="Megan Hunt" class="megan-pic" height="70px">
-            <h4>Megan Hunt</h4>
-            <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula.</p>
-            <p>Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Aliquam erat volutpat. Integer ut tincidunt orci. Etiam tristique, elit ut consectetur iaculis, metus lectus mattis justo, vel mollis eros neque quis augue. Sed lobortis ultrices lacus, a placerat metus rutrum sit amet. Aenean ut suscipit justo.</p>
-        </div>
-    </main>
+        <!-- Header -->
+        <header role="banner">
+            <!-- Work -->
+            <section role="img" aria-label="Work Image">
+                    <picture>
+                        <source srcset="img/work_480_x_306.jpg 480w,
+                                    img/work_960_x_612.jpg 960w,
+                                    img/work_1440_x_918.jpg 1440w"
+                                media="(max-width: 1440px)" sizes="100vw">
+                        <img src="img/work_1440_x_918.jpg" alt="Work">
+                    </picture>
+            </section>
+        </header>
+
+        <!-- Main -->
+        <main>
+            <div>
+                <h6 class="under">Under "Basic Amenities"</h6>
+                <h5>Ghana Residential Fund</h5>
+                    <div class="total">
+                    <h6>TOTAL RAISED </h6>
+                    <p class="p1"><s>$40,000</s></p>
+                    <p class="p2">$50,000</p>
+            </div>
+
+            <!-- Megan Hunt -->
+            <div class="megan" role="img">
+                <img src="img/woman.jpg" alt="Megan Hunt" class="megan-pic" height="35px">
+                <h4>Megan Hunt</h4>
+            </div>
+                <p class="p3">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula.</p> <br><br>
+                <p class="p3">Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Aliquam erat volutpat. Integer ut tincidunt orci. Etiam tristique, elit ut consectetur iaculis, metus lectus mattis justo, vel mollis eros neque quis augue. Sed lobortis ultrices lacus, a placerat metus rutrum sit amet. Aenean ut suscipit justo.</p>
+        </main>
 
 
 
-    <!-- Footer -->
-    <footer role="contentinfo">
-        <button type="submit" value="button">SUPPORT THIS PROJECT</button>
-    </footer>
+        <!-- Footer NAV -->
+        <footer role="contentinfo">
+            <button type="submit" value="button" class="btn-login">SUPPORT THIS PROJECT</button>
+        </footer>
+    </div>
 
 </body>
 </html>

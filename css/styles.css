@@ -1,4 +1,418 @@
 /*Body*/
 body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
+
+/*index style*/
+.act{
+    font-size: 24px;
+    font-weight: 600;
+    color:#0D65D8;
+}
+h2{
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+#header-index{
+    text-align: center;
+    margin-top: 100px;
+}
+
+/*image-kids*/
+.image-kids {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.image-kids img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*button get*/
+.btn-get {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0D65D8;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    padding: 20px 100px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    margin: auto;
+    margin-top: 100px;
+    transition-duration: 0.5s;
+}
+
+.btn-get:active {
+    background-color: #7eb4fc;
+}
+
+
+/*LOGIN STYLE*/
+
+#back-button{
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #000;
+    font-size: 24px;
+    text-decoration: none; 
+    margin-bottom: 30px;  
+    margin-top: 40px;
+}
+
+.login-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.get-started{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 60px;  
+    margin-top: 10px; 
+}
+
+/*Form*/
+.form-1{
+    border: none;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.container{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*Button Login*/
+.btn-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0D65D8;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    padding: 20px 100px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    margin: auto;
+    margin-top: 100px;
+    transition-duration: 0.5s;
+}
+
+.btn-login:active {
+    background-color: #7eb4fc;
+}
+
+.form-1{
+    position: relative;
+    margin: 30px 0;
+}   
+
+.form-1 input{
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1px solid #757E90;
+    margin-top: 40px;
+}
+
+.container-login{
+    margin-top: 20px;
+}
+
+/*Password Container*/
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.password-container .visibility-icon {
+    cursor: pointer;
+}
+
+/*Button visibility*/
+.btn-vis {
+    margin-left: 10px;
+}
+
+#visibility{
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/*Remember password*/
+.password-options {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    font-size: 12px;
+}
+
+
+/*WELCOME STYLE*/
+.wrap{
+    padding: 1rem;
+}
+
+.profile-bar{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.circular-picture {
+    right: 0;
+    border-radius: 50%; 
+}
+
+/*WELCOME Title*/
+.welcome-title{
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+.person{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.header-welcome h3{
+    margin-bottom: 30px;
+}
+
+/*Button profile*/
+.parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #757E90;
+}
+
+#profile-button {
+    background-color: #0D65D8;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: none;
+    text-align: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    animation: profile-btn 0.1s ease-in-out 6 alternate;
+}
+
+@keyframes profile-btn {
+    0% {
+        transform: rotate(-3deg);
+    }
+    100% {
+        transform: rotate(3deg);
+    }
+}
+
+#dismiss-button{
+    background-color: white;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: none;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*Main*/
+.trending{
+    font-size: 10px;
+    font-weight: bold;
+    color: gray;
+    padding-bottom: 20px;
+}
+
+section img {
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    section img {
+        width: 100%;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 1023px) {
+    section img {
+        width: 100%;
+    }
+}
+
+/* Phones */
+@media screen and (max-width: 767px) {
+    section img {
+        width: 100%;
+    }
+}
+
+/*button*/
+#location-button{
+    background-color: white;
+    color: #000;
+    font-size: 20px;
+    border-radius: 5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: none;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h5{
+    position: relative;
+    font-size: 20px;
+    color: #000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h5::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to right, #0D65D8 50%, #757E90 50%);
+}
+
+h6{
+    font-size: 11px;
+    color: #757E90;
+    grid-column: span 2;
+    text-align: left;
+}
+
+.total{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: right;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.p1{
+    font-size: 16px;
+    color: #757E90;
+}
+
+.p2{
+    font-size: 20px;
+    color: #0D65D8;
+    font-weight: bold;
+}
+
+/*Fotter NAV*/
+footer nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-item {
+    text-align: center; 
+}
+
+.list-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px; 
+    text-decoration: none;
+    color: black; 
+}
+
+
+/*GHANA*/
+.back-menu {
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    align-items: center; 
+}
+
+.back {
+    justify-self: start;
+}
+
+.more {
+    justify-self: end; 
+}
+
+
+.under{
+    padding-top: 20px;
+}
+
+.megan-pic{
+    right: 0;
+    border-radius: 50%; 
+}
+
+.megan {
+    display: flex;
+    align-items: center;
+}
+
+.megan h4 {
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.p3{
+    font-size: 12px;
+    color: #757E90;
+    line-height: 2;
+}
+
+/*NAV Animations*/
+
+nav a{
+    font-size:40px;
+    color:#888;
+      display:block;
+      margin:0;
+      padding:30px;
+      transition: transform 0.5s ease-in-out;
+  }
+  
+  nav a:hover{
+      color: #000;
+      transform: translateY(-8px);
+  }
+
+
+
+

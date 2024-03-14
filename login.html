@@ -12,7 +12,7 @@
     <title>Login</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" role="main">
         <div class="btn-arrow-back">
             <button type="button" id="back-button">
                 <a href="index.html" style="text-decoration: none;">
@@ -21,7 +21,7 @@
         </div>
 
         <!-- Header -->
-        <header>
+        <header role="banner">
                 <div class="login-title">
                     <h1>Login</h1>
                 </div>
@@ -40,21 +40,21 @@
                     <div class="password-container">
                         <input type="password" id="password" name="password">
                         <div class="btn-vis">
-                            <button type="button" id="visibility"><span class="material-icons">visibility</span></button>
+                            <button type="button" id="visibility" aria-label="Toggle Password Visibility"><span class="material-icons">visibility</span></button>
                         </div>
                     </div>
                 </form>
             </div>            
 
             <!-- remember -->
-            <div class="password-options">
+            <div class="password-options" role="group" aria-label="Password Options">
                 <p>🔵 Remember Password</p> 
                 <p>Forgot Password</p>
             </div>
 
             <div class="container-login">
                 <!-- Button get started -->
-                <button type="submit" value="button" class="btn-login">CONTINUE TO LOGIN<a href="welcome.html">.</a></button>
+                <button type="submit" value="button" class="btn-login">CONTINUE TO LOGIN<a href="welcome.html" aria-hidden="true">.</a></button>
             </div>
         </main>
     </div>
